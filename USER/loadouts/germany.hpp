@@ -103,16 +103,16 @@ class germany {
 
         //autorifleman
         class Soldier_AR_F: Soldier_F {
-            primaryWeapon = "hlc_lmg_MG3_optic";
-            primaryWeaponMagazine = "150Rnd_762x51_Box_Tracer";
+            primaryWeapon = "rhs_weap_pkp";
+            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_green";
             primaryWeaponOptics = "rhsusf_acc_eotech_xps3";
             backpack = "B_Kitbag_rgr";
             addItemsToVest[] = {
-                LIST_2("150Rnd_762x51_Box_Tracer"),
+                LIST_2("rhs_100Rnd_762x54mmR_green"),
                 LIST_1("rhs_mag_rdg2_white"),
             };
             addItemsToBackpack[] = {
-                LIST_3("150Rnd_762x51_Box_Tracer")
+                LIST_3("rhs_100Rnd_762x54mmR_green")
             };
         };
 
@@ -120,7 +120,7 @@ class germany {
         class Soldier_AAR_F: Soldier_F {
             backpack = "B_Kitbag_rgr";
             addItemsToBackpack[] = {
-                LIST_4("150Rnd_762x51_Box_Tracer")
+                LIST_4("rhs_100Rnd_762x54mmR_green")
             };
         };
     };
