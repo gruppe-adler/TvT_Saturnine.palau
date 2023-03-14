@@ -1,8 +1,8 @@
 class russia {
     class AllUnits {
-        uniform = "rhs_uniform_flora_patchless_alt";
+        uniform[] = {"U_I_C_Soldier_Para_2_F", "U_I_C_Soldier_Camo_F"};
         backpack = "";
-        vest[] = {"rhs_6b23_6sh92"};
+        vest[] = {"rhs_6b23"};
         primaryWeapon[] = {"rhs_weap_ak74m"};
         primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
         primaryWeaponMuzzle = "";
@@ -29,7 +29,7 @@ class russia {
         handgunWeaponPointer = "";
         handgunWeaponUnderbarrel = "";
         handgunWeaponUnderbarrelMagazine = "";
-        headgear = "rhs_ssh68";
+        headgear = "rhssaf_booniehat_woodland";
         goggles = "";
         nvgoggles = "";
         binoculars = "Binocular";
@@ -82,7 +82,7 @@ class russia {
             primaryWeapon = "rhs_weap_ak74m_gp25";
             primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
             handgunWeapon = "rhs_weap_tr8";
-            headgear = "rhs_ssh68";
+            headgear = "rhssaf_booniehat_woodland";
             backpack = "rhs_sidor";
             addItemsToBackpack[] = {
                 LIST_6("rhs_GRD40_White"),

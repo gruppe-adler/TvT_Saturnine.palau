@@ -1,8 +1,8 @@
 class germany {
    class AllUnits {
-        uniform = "rhsgref_uniform_olive";
+        uniform[] = {"U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"};
         backpack = "";
-        vest[] = {"rhs_6b5"};
+        vest[] = {"UK3CB_TKA_O_V_6b23_ml_BLU"};
         primaryWeapon[] = {"rhs_weap_g36c"};
         primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
         primaryWeaponMuzzle = "";
@@ -29,7 +29,7 @@ class germany {
         handgunWeaponPointer = "";
         handgunWeaponUnderbarrel = "";
         handgunWeaponUnderbarrelMagazine = "";
-        headgear = "rhsgref_helmet_pasgt_olive";
+        headgear = "H_Beret_gen_F";
         goggles = "";
         nvgoggles = "";
         binoculars = "Binocular";
