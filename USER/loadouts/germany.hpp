@@ -3,16 +3,12 @@ class germany {
         uniform[] = {"U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"};
         backpack = "";
         vest[] = {"UK3CB_TKA_O_V_6b23_ml_BLU"};
-        primaryWeapon[] = {"rhs_weap_g36c"};
-        primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
+        primaryWeapon[] = {"arifle_AK12_F"};
+        primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_RT";
         primaryWeaponMuzzle = "";
         primaryWeaponOptics[] = {
-            "rhs_acc_1p87",
-            "optic_Yorris",
-            "rhsusf_acc_eotech_552",
-            "rhsusf_acc_T1_low"
         };
-        primaryWeaponPointer = "rhsusf_acc_wmx_bk";
+        primaryWeaponPointer = "acc_flashlight";
         primaryWeaponUnderbarrel = "";
         primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
@@ -54,21 +50,26 @@ class germany {
     class Type {
         // Rifleman
         class Soldier_F {
+            backpack = "UK3CB_ION_B_B_RIF_BLK_01";
             addItemsToVest[] = {
-                LIST_8("rhssaf_30rnd_556x45_SOST_G36"),
-                LIST_2("rhs_mag_rgd5"),
+                LIST_8("UK3CB_AK47_30Rnd_Magazine_RT"),
+                LIST_1("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
                 "ACE_EntrenchingTool"
+            };
+            addItemsToBackpack[] = {
+                LIST_7("UK3CB_AK47_30Rnd_Magazine_GT")
             };
         };
 
         // Grenadier
         class Soldier_GL_F: Soldier_F {
-            primaryWeapon = "rhs_weap_g36kv_ag36";
-            primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
-            backpack = "B_Kitbag_rgr";
+            primaryWeapon = "arifle_AK12_GL_F";
+            primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_RT";
+            backpack = "UK3CB_ION_B_B_RIF_BLK_01";
             addItemsToBackpack[] = {
-                LIST_6("rhs_mag_m714_White")
+                LIST_10("rhs_mag_M583A1_white"),
+                 LIST_6("rhs_mag_m714_White")
             };
         };
 
@@ -79,14 +80,15 @@ class germany {
 
         // TL
         class Soldier_TL_F: Soldier_F {
-            primaryWeapon = "rhs_weap_g36kv_ag36";
-            primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
+            primaryWeapon = "arifle_AK12_GL_F";
+            primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_RT";
             handgunWeapon = "rhs_weap_tr8";
-            backpack = "B_Kitbag_rgr";
+            backpack = "UK3CB_ION_B_B_RIF_BLK_01";
             addItemsToBackpack[] = {
+                LIST_6("rhs_mag_M583A1_white"),
                 LIST_6("rhs_mag_m714_White"),
-                LIST_2("rhs_mag_m713_Red"),
-                LIST_2("rhs_mag_m715_Green"),
+                LIST_2("rhs_mag_M664_red_cluster"),
+                LIST_2("rhs_mag_M663_green_cluster"),
                 LIST_1("grad_axe")
             };
         };
@@ -103,24 +105,24 @@ class germany {
 
         //autorifleman
         class Soldier_AR_F: Soldier_F {
-            primaryWeapon = "rhs_weap_pkp";
-            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_green";
+            primaryWeapon = "UK3CB_MG3_KWS_B";
+            primaryWeaponMagazine = "UK3CB_MG3_250rnd_762x51_RT";
             primaryWeaponOptics = "rhsusf_acc_eotech_xps3";
-            backpack = "B_Kitbag_rgr";
+            backpack = "UK3CB_ION_B_B_RIF_BLK_01";
             addItemsToVest[] = {
-                LIST_2("rhs_100Rnd_762x54mmR_green"),
+                LIST_2("UK3CB_MG3_250rnd_762x51_RT"),
                 LIST_1("rhs_mag_rdg2_white"),
             };
             addItemsToBackpack[] = {
-                LIST_3("rhs_100Rnd_762x54mmR_green")
+                LIST_3("UK3CB_MG3_250rnd_762x51_RT")
             };
         };
 
         //assistant autorifleman
         class Soldier_AAR_F: Soldier_F {
-            backpack = "B_Kitbag_rgr";
+            backpack = "UK3CB_ION_B_B_RIF_BLK_01";
             addItemsToBackpack[] = {
-                LIST_4("rhs_100Rnd_762x54mmR_green")
+                LIST_4("UK3CB_MG3_250rnd_762x51_RT")
             };
         };
     };

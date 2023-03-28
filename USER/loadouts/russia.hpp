@@ -3,16 +3,12 @@ class russia {
         uniform[] = {"U_I_C_Soldier_Para_2_F", "U_I_C_Soldier_Camo_F"};
         backpack = "";
         vest[] = {"rhs_6b23"};
-        primaryWeapon[] = {"rhs_weap_ak74m"};
-        primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
+        primaryWeapon[] = {"arifle_AK12_F"};
+        primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_GT";
         primaryWeaponMuzzle = "";
         primaryWeaponOptics[] = {
-            "rhs_acc_pkas",
-            "rhs_acc_ekp8_02",
-            "rhs_acc_1p63",
-            "rhs_acc_ekp1"
         };
-        primaryWeaponPointer = "rhs_acc_2dpZenit";
+        primaryWeaponPointer = "acc_flashlight";
         primaryWeaponUnderbarrel = "";
         primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
@@ -54,21 +50,26 @@ class russia {
     class Type {
         // Rifleman
         class Soldier_F {
+            backpack = "rhs_assault_umbts";
             addItemsToVest[] = {
-				LIST_9("rhs_30Rnd_545x39_7N22_plum_AK"),
-				LIST_2("rhs_mag_rgd5"),
+				LIST_9("UK3CB_AK47_30Rnd_Magazine_GT"),
+				LIST_1("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
                 "ACE_EntrenchingTool"
 			};
+            addItemsToBackpack[] = {
+                LIST_7("UK3CB_AK47_30Rnd_Magazine_GT")
+            };
         };
 
         // Grenadier
         class Soldier_GL_F: Soldier_F {
-            primaryWeapon = "rhs_weap_ak74m_gp25";
-            primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
+            primaryWeapon = "arifle_AK12_GL_F";
+            primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_GT";
             backpack = "rhs_sidor";
             addItemsToBackpack[] = {
-                LIST_6("rhs_GRD40_White")
+                 LIST_10("rhs_mag_M583A1_white"),
+                 LIST_6("rhs_mag_m714_White")
             };
         };
 
@@ -79,15 +80,16 @@ class russia {
 
         // TL
         class Soldier_TL_F: Soldier_F {
-            primaryWeapon = "rhs_weap_ak74m_gp25";
-            primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
+            primaryWeapon = "arifle_AK12_GL_F";
+            primaryWeaponMagazine = "UK3CB_AK47_30Rnd_Magazine_GT";
             handgunWeapon = "rhs_weap_tr8";
             headgear = "rhssaf_booniehat_woodland";
             backpack = "rhs_sidor";
             addItemsToBackpack[] = {
-                LIST_6("rhs_GRD40_White"),
-                LIST_2("rhs_GRD40_Red"),
-                LIST_2("rhs_GRD40_Green"),
+                LIST_6("rhs_mag_M583A1_white"),
+                LIST_2("rhs_mag_M664_red_cluster"),
+                LIST_2("rhs_mag_M663_green_cluster"),
+                LIST_6("rhs_mag_m714_White"),
                 LIST_1("grad_axe")
             };
         };
@@ -104,16 +106,16 @@ class russia {
 
         //autorifleman
         class Soldier_AR_F: Soldier_F {
-            primaryWeapon = "rhs_weap_pkp";
-            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_green";
-            primaryWeaponOptics = "rhs_acc_ekp1";
+            primaryWeapon = "UK3CB_MG3_KWS_B";
+            primaryWeaponMagazine = "UK3CB_MG3_250rnd_762x51_GT";
+            primaryWeaponOptics = "rhsusf_acc_eotech_xps3";
             backpack = "rhs_assault_umbts";
             addItemsToVest[] = {
-                LIST_2("rhs_100Rnd_762x54mmR_green"),
+                LIST_2("UK3CB_MG3_250rnd_762x51_GT"),
                 LIST_1("rhs_mag_rdg2_white"),
 			};
             addItemsToBackpack[] = {
-                LIST_3("rhs_100Rnd_762x54mmR_green")
+                LIST_3("UK3CB_MG3_250rnd_762x51_GT")
             };
         };
 
@@ -121,7 +123,7 @@ class russia {
         class Soldier_AAR_F: Soldier_F {
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
-                LIST_4("rhs_100Rnd_762x54mmR_green")
+                LIST_4("UK3CB_MG3_250rnd_762x51_GT")
             };
         };
     };
